@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+        body{
+                background: url("http://papers.co/wallpaper/papers.co-ad28-cute-pokemon-illust-29-wallpaper.jpg");
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <center><h1 style="color:rgb(15, 131, 131); background-color:white">Pokemon Searcher</h1></center>
+    <form class = 'row' action='http://localhost:5000/hasil' method='POST'>
+        <div class='container'>
+            <div class='center'>
+                <div class="input-field">
+                    <input type='text' name='search' style="color:rgb(15, 131, 131)" >
+                    <label for='search'>Ketik Nama Pokemon</label>
+                </div>
+                <input class="btn btn-large waves-effect waves-light"
+                type='submit' value='Cari'>
+            </div>
+        </div>
+    </form>
+
+</body>         
+</html>

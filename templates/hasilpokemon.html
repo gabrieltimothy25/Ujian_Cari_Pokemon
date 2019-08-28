@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+        body{
+                background: url("http://papers.co/wallpaper/papers.co-ad28-cute-pokemon-illust-29-wallpaper.jpg");
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <center><h1 style="color:rgb(15, 131, 131); background-color:white" >{{ name }}</h1>
+    <div class = 'container'><img src={{ sprite }} alt="Sprite" height="200" width="200"</div>
+    <div class='container' col s6>
+        <p style="color:rgb(15, 131, 131)">ID = {{ _id }}</p>
+    </div>
+    <div class='container' col s6>
+        <p style="color:rgb(15, 131, 131)">Tinggi = {{ height }}</p>
+    </div>
+    <div class='container' col s6>
+        <p style="color:rgb(15, 131, 131)">Berat = {{ weight }}</p>
+    </div>
+    <form action='http://localhost:5000'>
+    <input class="btn btn-large waves-effect waves-light"
+    type='submit' value='Kembali'>
+    </form>
+    </center>
+</body>         
+</html>
